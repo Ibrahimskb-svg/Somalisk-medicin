@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Insulin – sonkoroowga</title>
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e6f2f8;
+  color: #123047;
+  margin: 0;
+}
+header {
+  background: linear-gradient(135deg, #0066cc, #00a676);
+  color: #fff;
+  padding: 22px 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+header h1 {
+  margin: 0 0 4px;
+  font-size: 1.8rem;
+}
+header p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+main {
+  max-width: 820px;
+  margin: 18px auto 32px;
+  padding: 0 14px;
+}
+a.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  text-decoration: none;
+  color: #00509e;
+  font-size: 0.9rem;
+}
+a.back span {
+  font-size: 1.1rem;
+}
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px 16px 10px;
+  margin-bottom: 14px;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.12);
+  border-top: 4px solid #00a676;
+}
+.drug-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.drug-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.drug-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #e3f2fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drug-icon svg {
+  width: 30px;
+  height: 30px;
+}
+.drug-labels {
+  display: flex;
+  flex-direction: column;
+}
+.drug-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.drug-form {
+  font-size: 0.82rem;
+  color: #29516e;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #d9f6e8;
+  color: #16634a;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+.section {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed #d0d7e2;
+}
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.section-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #123047;
+}
+.section-icon.use { background:#e3f2fd; }
+.section-icon.dose { background:#e2f5ea; }
+.section-icon.side { background:#fff3e0; }
+.section-icon.interact { background:#ede7f6; }
+.section-icon.warn { background:#ffebee; }
+.section-icon.ramadan { background:#e0f7fa; }
+.section-icon.food { background:#f1f8e9; }
+.section-icon.store { background:#edeff9; }
+.section-title {
+  font-weight: 700;
+  color: #123047;
+  font-size: 0.96rem;
+}
+.section-title small {
+  font-weight: 400;
+  color: #607089;
+}
+.section ul {
+  margin: 0 0 4px 18px;
+  padding-left: 0;
+  font-size: 0.92rem;
+}
+.section ul li {
+  margin-bottom: 4px;
+}
+.highlight {
+  font-weight: 600;
+}
+.footer-note {
+  font-size: 0.8rem;
+  color: #607089;
+  text-align: center;
+  margin: 18px 0 10px;
+}
+.index-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.index-list li {
+  margin-bottom: 8px;
+}
+.index-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 10px 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.10);
+  border-left: 4px solid #00a676;
+  color: #123047;
+}
+.index-link:hover {
+  background: #f1f8ff;
+}
+.index-left {
+  display: flex;
+  flex-direction: column;
+}
+.index-title {
+  font-weight: 600;
+  font-size: 0.96rem;
+}
+.index-sub {
+  font-size: 0.8rem;
+  color: #607089;
+}
+.index-icon {
+  font-size: 1.2rem;
+}
+@media (max-width: 600px) {
+  header h1 { font-size: 1.5rem; }
+}
+
+</style>
+</head>
+<body>
+<header>
+  <h1>Insulin – sonkoroowga</h1>
+  <p>Waa warbixin kooban oo ku saabsan daawada – waxaa loogu talagalay waalidiinta iyo bukaannada Soomaaliyeed.</p>
+</header>
+<main>
+  <a href="index.html" class="back"><span>←</span><span>Ku laabo liiska daawooyinka</span></a>
+  <div class="card">
+    <div class="drug-meta">
+      <div class="drug-info">
+        <div class="drug-icon">
+          
+
+
+<svg viewBox="0 0 64 64">
+  <rect x="26" y="8" width="12" height="14" fill="#c8e6ff" stroke="#1a73e8" stroke-width="2"/>
+  <rect x="22" y="22" width="20" height="30" rx="3" fill="#ffffff" stroke="#1a73e8" stroke-width="3"/>
+  <line x1="32" y1="52" x2="32" y2="60" stroke="#1a73e8" stroke-width="3"/>
+  <line x1="32" y1="60" x2="26" y2="63" stroke="#1a73e8" stroke-width="3"/>
+  <line x1="32" y1="60" x2="38" y2="63" stroke="#1a73e8" stroke-width="3"/>
+</svg>
+
+
+
+        </div>
+        <div class="drug-labels">
+          <div class="drug-name">Insulin – sonkoroowga</div>
+          <div class="drug-form">Irbad/qalin (pen) (Sprøjte eller pen til injektion)</div>
+        </div>
+      </div>
+      <div class="badge">Akhris fudud oo kooban</div>
+    </div>
+    
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon use">1</div>
+        <div class="section-title">Isticmaalka <small>(Anvendelse)</small></div>
+      </div>
+      <ul>
+        <li>Insulin waxaa isticmaala dadka qaba sonkoroowga nooca 1-aad iyo qaar ka mid ah nooca 2-aad.</li><li>Waxay hoos u dhigtaa sonkorta dhiigga iyadoo u oggolaanaysa sonkorta inay gasho unugyada.</li>
+      </ul>
+    </div>
+    
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon dose">2</div>
+        <div class="section-title">Qiyaasta <small>(Dosering)</small></div>
+      </div>
+      <ul>
+        <li>Qiyaasta insulin waa shaqsi; waxaa dejinaya dhakhtar ama kalkaalisada sonkorta.</li><li>Raac qorshahaaga qoraalka ah (insulin-plan).</li>
+      </ul>
+    </div>
+    
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon side">3</div>
+        <div class="section-title">Waxyeellooyinka <small>(Bivirkninger)</small></div>
+      </div>
+      <ul>
+        <li>Sonkor hoose (hypoglykæmi): gariir, dhidid, gaajo, wareer – cun wax macaan isla markiiba.</li><li>Barar yar ama casaan goobta irbadda; beddel meelaha cirbadda la geliyo.</li>
+      </ul>
+    </div>
+    
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon interact">4</div>
+        <div class="section-title">Isdhexgalka daawooyinka <small>(Interaktioner)</small></div>
+      </div>
+      <ul>
+        <li>Daawooyinka kale ee sonkorta hoos u dhiga waxay kordhin karaan khatarta hypoglykæmi.</li><li>Beta-blokker (tusaale metoprolol) waxay qarin karaan calaamadaha sonkor hoose.</li>
+      </ul>
+    </div>
+    
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon warn">!</div>
+        <div class="section-title">Digniino <small>(Advarsler)</small></div>
+      </div>
+      <ul>
+        <li>Ha ka tagin guriga adiga oo aan qaadan wax macaan ama kaarkaaga sonkoroowga.</li><li>Haddii aad matagto ama jiran tahay, la xiriir dhakhtar; qiyaasta ayaa laga yaabaa in loo baahdo in la beddelo.</li>
+      </ul>
+    </div>
+    
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon ramadan">☾</div>
+        <div class="section-title">Ramadaan iyo soonka <small>(Ramadan og faste)</small></div>
+      </div>
+      <ul>
+        <li>Irbadaha insulin badanaa looma tixgeliyo inay jebiyaan soonka, laakiin khatarta hypoglykæmi ayaa kordhi karta.</li><li>Ka hor Ramadaanka, samee qorshe lala yeesho kooxdan sonkoroowga iyo wadaad.</li>
+      </ul>
+    </div>
+    
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon food">🍽</div>
+        <div class="section-title">Cunto iyo cabitaan <small>(Mad og drikke)</small></div>
+      </div>
+      <ul>
+        <li>Waxay ku xiran tahay nooca insulin; qaarkood cunno ka hor, qaarna ka dib.</li><li>Raac tilmaamaha qoraalka ah ee aad ka heshay isbitaalka.</li>
+      </ul>
+    </div>
+    
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon store">⧉</div>
+        <div class="section-title">Kaydinta daawada <small>(Opbevaring)</small></div>
+      </div>
+      <ul>
+        <li>Insulin aan la furin: qaboojiye (2–8°C).</li><li>Ka dib furitaanka: badanaa 4 toddobaad heerkulka qolka (eeg baakadka). Ha qaboojin.</li>
+      </ul>
+    </div>
+    
+  </div>
+
+  <div class="footer-note">
+    Haddii aad u baahan tahay faahfaahin dheeraad ah, la xiriir <span class="highlight">farmashiyaha</span> ama dhakhtarkaaga.<br/>(Hvis du har brug for mere information, kontakt dit lokale apotek eller din egen læge.)</div>
+</main>
+<div class="footer-note">
+  Qoraalkan waxaa diyaariyay Farmakonom: Ibrahim Dahir Hanaf
+<br/>(Dette materiale er udviklet af farmakonomen: Ibrahim Dahir Hanaf)
+</div>
+</body>
+</html>
